@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="8824" started-at="2016-12-22T17:13:01Z" finished-at="2016-12-22T17:13:10Z">
+  <suite name="Suite1" duration-ms="12655" started-at="2016-12-28T16:30:29Z" finished-at="2016-12-28T16:30:41Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="8824" started-at="2016-12-22T17:13:01Z" finished-at="2016-12-22T17:13:10Z">
-      <class name="example.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@42d3bd8b]" name="beforeTest" is-config="true" duration-ms="3288" started-at="2016-12-22T17:13:01Z" finished-at="2016-12-22T17:13:04Z">
+    <test name="Test Hard" duration-ms="4779" started-at="2016-12-28T16:30:29Z" finished-at="2016-12-28T16:30:33Z">
+      <class name="example.testHard">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.testHard@13fee20c]" name="beforeTest" is-config="true" duration-ms="3131" started-at="2016-12-28T16:30:29Z" finished-at="2016-12-28T16:30:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@42d3bd8b]" name="testEasy" duration-ms="5012" started-at="2016-12-22T17:13:04Z" finished-at="2016-12-22T17:13:09Z">
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.testHard@13fee20c]" name="testEasy" duration-ms="1317" started-at="2016-12-28T16:30:32Z" finished-at="2016-12-28T16:30:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEasy -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@42d3bd8b]" name="afterTest" is-config="true" duration-ms="513" started-at="2016-12-22T17:13:09Z" finished-at="2016-12-22T17:13:10Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.testHard@13fee20c]" name="afterTest" is-config="true" duration-ms="322" started-at="2016-12-28T16:30:33Z" finished-at="2016-12-28T16:30:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- example.testHard -->
+    </test> <!-- Test Hard -->
+    <test name="New Test" duration-ms="7838" started-at="2016-12-28T16:30:33Z" finished-at="2016-12-28T16:30:41Z">
+      <class name="example.NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:example.NewTest@4157f54e]" name="beforeTest" is-config="true" duration-ms="2237" started-at="2016-12-28T16:30:33Z" finished-at="2016-12-28T16:30:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testEasy()[pri:0, instance:example.NewTest@4157f54e]" name="testEasy" duration-ms="5188" started-at="2016-12-28T16:30:36Z" finished-at="2016-12-28T16:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEasy -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:example.NewTest@4157f54e]" name="afterTest" is-config="true" duration-ms="413" started-at="2016-12-28T16:30:41Z" finished-at="2016-12-28T16:30:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- example.NewTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- New Test -->
+  </suite> <!-- Suite1 -->
 </testng-results>
