@@ -1,5 +1,6 @@
 package example;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -10,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
 public class NewTest {
-    private WebDriver driver;
+    private HtmlUnitDriver driver;
 
     @Test
     public void testEasy() {
@@ -22,7 +23,7 @@ public class NewTest {
 
     @BeforeTest
     public void beforeTest() {
-        driver = new HtmlUnitDriver();
+        driver = new HtmlUnitDriver(BrowserVersion.FIREFOX_38);
     }
 
     @AfterTest
