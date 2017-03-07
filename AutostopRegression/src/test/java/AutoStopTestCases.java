@@ -277,6 +277,7 @@ public class AutoStopTestCases {
 
         for (int i = 0; i<=210; i++){
            // WebElement ele = list_accounts.get(i);
+            utils.sleep(2000L);
             if (driver.findElement(By.xpath("//p[text()='No items to display.']")).isDisplayed())
             {
                 break;
@@ -338,6 +339,7 @@ public class AutoStopTestCases {
                 File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
                 FileUtils.copyFile(scrFile, new File("C:\\Users\\ike.lionel\\Desktop\\Screenshot\\" + utils.generateScreenshotName("TakescreenShot")));
             }
+        //testAutostop_DeleteAll();
 
         //testAutostop_Delete();
         //Logout
